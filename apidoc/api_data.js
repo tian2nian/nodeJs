@@ -1,0 +1,183 @@
+define({ "api": [
+  {
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "optional": false,
+            "field": "varname1",
+            "description": "<p>No type.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "varname2",
+            "description": "<p>With type.</p>"
+          }
+        ]
+      }
+    },
+    "type": "",
+    "url": "",
+    "version": "0.0.0",
+    "filename": "demo1/node/apidoc/main.js",
+    "group": "C__Users_22511_Documents_____project_study_demo_demo1_node_apidoc_main_js",
+    "groupTitle": "C__Users_22511_Documents_____project_study_demo_demo1_node_apidoc_main_js",
+    "name": ""
+  },
+  {
+    "group": "User",
+    "type": "GET",
+    "url": "/getCode",
+    "title": "获取验证码",
+    "description": "<p>获取验证码</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "mail",
+            "description": "<p>邮箱(必填*)</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "SuccessExample",
+          "content": "HTTP/1.1 200\n{\nmsg: '发送成功'\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "demo1/node/server.js",
+    "groupTitle": "User",
+    "name": "GetGetcode"
+  },
+  {
+    "group": "User",
+    "type": "GET",
+    "url": "/user/login",
+    "title": "登录",
+    "description": "<p>用户登录</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "us",
+            "description": "<p>用户名(必填*)</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "ps",
+            "description": "<p>用户密码(必填*)</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "SuccessExample",
+          "content": "HTTP/1.1 200\n{\nmsg: '登录成功'\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "demo1/node/router/user.js",
+    "groupTitle": "User",
+    "name": "GetUserLogin"
+  },
+  {
+    "group": "User",
+    "type": "POST",
+    "url": "/user/add",
+    "title": "注册",
+    "description": "<p>用户注册</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "us",
+            "description": "<p>用户名(必填*)</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "ps",
+            "description": "<p>用户密码(必填*)</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "code",
+            "description": "<p>邮箱验证码(必填*)</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "SuccessExample",
+          "content": "HTTP/1.1 200\n{\nmsg: '注册成功'\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "demo1/node/router/user.js",
+    "groupTitle": "User",
+    "name": "PostUserAdd"
+  },
+  {
+    "group": "User",
+    "type": "POST",
+    "url": "/user/del",
+    "title": "注销账号",
+    "description": "<p>删除用户</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "us",
+            "description": "<p>用户名(必填*)</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "SuccessExample",
+          "content": "HTTP/1.1 200\n{\nmsg: '注销成功'\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "demo1/node/router/user.js",
+    "groupTitle": "User",
+    "name": "PostUserDel"
+  }
+] });
